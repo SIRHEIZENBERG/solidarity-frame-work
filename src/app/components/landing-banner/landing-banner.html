@@ -1,0 +1,37 @@
+<div class="carousel" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+  <div class="carousel-track" [style.transform]="getTransform()">
+    <div
+      *ngFor="let slide of slides"
+      class="slide"
+      [style.background-image]="'url(' + slide.image + ')'"
+    >
+      <div class="slide-content">
+        <h1>{{ slide.title }}</h1>
+        <p>{{ slide.description }}</p>
+        <a href="#" class="cta-button">{{ slide.buttonText }}</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-arrows">
+    <div class="arrow" (click)="prevSlide()">
+      <svg viewBox="0 0 24 24">
+        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+      </svg>
+    </div>
+    <div class="arrow" (click)="nextSlide()">
+      <svg viewBox="0 0 24 24">
+        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+      </svg>
+    </div>
+  </div>
+
+  <div class="carousel-dots">
+    <div
+      *ngFor="let slide of slides; let i = index"
+      class="dot"
+      [class.active]="i === currentSlide"
+      (click)="goToSlide(i)"
+    ></div>
+  </div>
+</div>
