@@ -6,12 +6,7 @@
           <div class="header-links style-white">
             <ul>
               <li>
-                <a href="registration.html"><i class="far fa-user-circle"></i>Login & Register</a>
-              </li>
-              <li>
-                <a href="contact.html" class="searchBoxTggler"
-                  ><i class="far fa-search"></i>Search Keyword</a
-                >
+                <a><i class="far fa-user-circle"></i>East Park Academy Joska</a>
               </li>
             </ul>
           </div>
@@ -38,17 +33,21 @@
       <div class="container">
         <div class="row gx-3 align-items-center justify-content-between">
           <div class="col-8 col-sm-auto">
-            <div class="header-logo">
-              <a href="index.html">
-                <img src="assets/img/logo.svg" alt="logo" />
+            <div class="header-logo custom-logo-area">
+              <a routerLink="/">
+                <img src="assets/img/logo/East Park Logo.jpg" class="east-park-logo" alt="logo" />
               </a>
+              <div class="custom-text-area">
+                <h1 class="custom-header-text">East Park</h1>
+                <h1 class="custom-header-text">Academy</h1>
+              </div>
             </div>
           </div>
           <div class="col text-end text-lg-center">
             <nav class="main-menu menu-style1 d-none d-lg-block">
               <ul>
                 <li>
-                  <a href="blog.html">Announcements</a>
+                  <a routerLink="our-team">Our Team</a>
                 </li>
 
                 <li>
@@ -60,21 +59,36 @@
                 </li>
               </ul>
             </nav>
-            <button class="vs-menu-toggle d-inline-block d-lg-none">
+            <button class="vs-menu-toggle d-inline-block d-lg-none" (click)="openMobileMenu()">
               <i class="fal fa-bars"></i>
             </button>
           </div>
-          <div class="col-auto d-none d-lg-block">
-            <div class="header-icons">
-              <button class="simple-icon sideMenuToggler">
-                <i class="far fa-bars"></i>
-              </button>
-            </div>
-          </div>
+
           <div class="col-auto d-none d-xl-block">
-            <a href="contact.html" class="vs-btn sideMenuToggler">Apply Today</a>
+            <a class="vs-btn">Apply Today</a>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <div class="mobile-menu-header">
+        <span>Menu</span>
+        <button class="mobile-menu-close" id="menuClose">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <nav class="mobile-menu-nav">
+        <ul>
+          <li><a href="/">Our Team</a></li>
+          <li><a href="/about-us">About Us</a></li>
+          <li><a href="/contact-us">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-footer">
+        <a class="vs-btn" href="/apply">Apply Today</a>
       </div>
     </div>
   </div>

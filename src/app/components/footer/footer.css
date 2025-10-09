@@ -1,0 +1,24 @@
+.east-park-logo {
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+  border-radius: 20%;
+}
+
+.custom-logo-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-header-text {
+  font-size: 25px;
+  text-wrap: noWrap;
+}
+
+.custom-text-area {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
