@@ -1,0 +1,579 @@
+.performance-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* Header Section */
+.performance-header {
+  text-align: center;
+  margin-bottom: 60px;
+  animation: fadeInDown 0.8s ease;
+}
+
+.performance-header h1 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 3em;
+  color: #7095c6;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.performance-header .subtitle {
+  font-size: 1.3em;
+  color: #666;
+  font-weight: 500;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Introduction Section */
+.intro-section {
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(112, 149, 198, 0.15);
+  margin-bottom: 50px;
+  animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+.intro-section h2 {
+  font-family: 'Fredoka', sans-serif;
+  color: #7095c6;
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.intro-section p {
+  font-size: 1.15em;
+  color: #555;
+  line-height: 1.9;
+  margin-bottom: 15px;
+}
+
+/* Stats Section */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+  animation: fadeInUp 0.8s ease 0.4s both;
+}
+
+.stat-card {
+  background: white;
+  padding: 35px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 5px 25px rgba(112, 149, 198, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(112, 149, 198, 0.2);
+}
+
+.stat-number {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 3em;
+  color: #7095c6;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 1.1em;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Top Performers Section */
+.performers-section {
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(112, 149, 198, 0.15);
+  margin-bottom: 50px;
+  animation: fadeInUp 0.8s ease 0.6s both;
+}
+
+.section-title {
+  font-family: 'Fredoka', sans-serif;
+  color: #7095c6;
+  font-size: 2em;
+  margin-bottom: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.trophy-icon {
+  font-size: 1.2em;
+}
+
+/* Year Tabs */
+.year-tabs {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.year-tab {
+  padding: 12px 28px;
+  background: #e8eff8;
+  border: none;
+  border-radius: 25px;
+  font-family: 'Jost', sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  color: #7095c6;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.year-tab:hover {
+  background: #7095c6;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.year-tab.active {
+  background: #7095c6;
+  color: white;
+  box-shadow: 0 4px 15px rgba(112, 149, 198, 0.3);
+}
+
+/* Performers Table */
+.performers-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.performers-table thead {
+  background: linear-gradient(135deg, #7095c6 0%, #8ba9d0 100%);
+}
+
+.performers-table thead th {
+  color: white;
+  padding: 20px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.05em;
+}
+
+.performers-table tbody tr {
+  border-bottom: 1px solid #e8eef5;
+  transition: all 0.3s ease;
+}
+
+.performers-table tbody tr:hover {
+  background: #f8fafc;
+  transform: scale(1.01);
+}
+
+.performers-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.performers-table tbody td {
+  padding: 20px;
+  color: #444;
+}
+
+.rank-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-weight: 700;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.1em;
+}
+
+.rank-1 {
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+  color: #8b6914;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.rank-2 {
+  background: linear-gradient(135deg, #c0c0c0 0%, #e8e8e8 100%);
+  color: #666;
+  box-shadow: 0 4px 15px rgba(192, 192, 192, 0.3);
+}
+
+.rank-3 {
+  background: linear-gradient(135deg, #cd7f32 0%, #e39d5f 100%);
+  color: #654321;
+  box-shadow: 0 4px 15px rgba(205, 127, 50, 0.3);
+}
+
+.rank-other {
+  background: #e8eff8;
+  color: #7095c6;
+}
+
+.student-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.student-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7095c6 0%, #8ba9d0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2em;
+  font-family: 'Fredoka', sans-serif;
+  flex-shrink: 0;
+}
+
+.student-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.student-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 1.05em;
+}
+
+.student-class {
+  color: #888;
+  font-size: 0.9em;
+}
+
+.marks-badge {
+  display: inline-block;
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.grade-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.grade-a {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.grade-b {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .performers-table tbody td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f4f8;
+  }
+
+  .performers-table tbody td:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .performers-table tbody td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #7095c6;
+    font-size: 0.95em;
+    flex-shrink: 0;
+  }
+
+  /* Rank cell - centered with no label */
+  .performers-table tbody td:first-child {
+    justify-content: center;
+    padding: 0 0 20px 0;
+    margin-bottom: 5px;
+    border: 1px solid #7095c6 !important;
+    border-radius: 10px !important;
+  }
+
+  .performers-table tbody td:first-child::before {
+    display: none;
+  }
+
+  /* Student cell - full width layout */
+  .performers-table tbody td:nth-child(2) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0 15px 0;
+    gap: 12px;
+  }
+
+  .performers-table tbody td:nth-child(2)::before {
+    align-self: flex-start;
+  }
+
+  .student-profile {
+    width: 100%;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .performance-container {
+    padding: 30px 15px;
+  }
+
+  .performance-header {
+    margin-bottom: 40px;
+  }
+
+  .performance-header h1 {
+    font-size: 2em;
+  }
+
+  .performance-header .subtitle {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+
+  .intro-section {
+    padding: 30px 20px;
+    margin-bottom: 30px;
+  }
+
+  .intro-section h2 {
+    font-size: 1.5em;
+  }
+
+  .intro-section p {
+    font-size: 1em;
+    line-height: 1.7;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .stat-card {
+    padding: 25px;
+  }
+
+  .stat-number {
+    font-size: 2.5em;
+  }
+
+  .performers-section {
+    padding: 25px 15px;
+    margin-bottom: 30px;
+  }
+
+  .section-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+
+  .year-tabs {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .year-tab {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+
+  /* Mobile Table Styles - Card Layout */
+  .performers-table {
+    border: none;
+  }
+
+  .performers-table thead {
+    display: none;
+  }
+
+  .performers-table tbody {
+    display: block;
+  }
+
+  .performers-table tbody tr {
+    display: block;
+    background: white;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: 1px solid #7095c6;
+    padding: 20px 15px;
+    box-shadow: 0 2px 8px rgba(112, 149, 198, 0.08);
+  }
+
+  .performers-table tbody tr:hover {
+    transform: none;
+    box-shadow: 0 4px 12px rgba(112, 149, 198, 0.15);
+  }
+
+  .performers-table tbody td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border: none !important;
+  }
+
+  .performers-table tbody td:last-child {
+    border-bottom: none;
+  }
+
+  .performers-table tbody td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #7095c6;
+    font-size: 0.9em;
+  }
+
+  .performers-table tbody td:first-child {
+    justify-content: center;
+    padding: 0 0 15px 0;
+    border-bottom: 2px solid #e8eef5;
+  }
+
+  .performers-table tbody td:first-child::before {
+    display: none;
+  }
+
+  .performers-table tbody td:nth-child(2) {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 15px 0;
+  }
+
+  .performers-table tbody td:nth-child(2)::before {
+    margin-bottom: 10px;
+  }
+
+  .student-profile {
+    gap: 12px;
+  }
+
+  .student-avatar {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1em;
+  }
+
+  .student-name {
+    font-size: 1em;
+  }
+
+  .student-class {
+    font-size: 0.85em;
+  }
+
+  .rank-badge {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3em;
+    margin-top: 10px;
+  }
+
+  .marks-badge,
+  .grade-badge {
+    padding: 8px 18px;
+    font-size: 0.95em;
+  }
+}
+
+@media (max-width: 480px) {
+  .performance-header h1 {
+    font-size: 1.6em;
+  }
+
+  .performance-header .subtitle {
+    font-size: 1em;
+  }
+
+  .intro-section {
+    padding: 25px 15px;
+  }
+
+  .intro-section h2 {
+    font-size: 1.3em;
+  }
+
+  .performers-section {
+    padding: 20px 10px;
+  }
+
+  .section-title {
+    font-size: 1.3em;
+  }
+
+  .year-tab {
+    padding: 8px 16px;
+    font-size: 0.85em;
+  }
+
+  .performers-table tbody tr {
+    padding: 15px 12px;
+  }
+
+  .stat-card {
+    padding: 20px;
+  }
+
+  .stat-number {
+    font-size: 2em;
+  }
+
+  .stat-label {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,91 @@
+<div class="performance-container">
+  <!-- Header -->
+  <div class="performance-header">
+    <h1>Academic Excellence</h1>
+    <p class="subtitle">Celebrating Outstanding Achievement and Educational Success</p>
+  </div>
+
+  <!-- Introduction Section -->
+  <div class="intro-section">
+    <h2>Our Commitment to Excellence</h2>
+    <p>
+      At East Park Academy, we pride ourselves on having the best performing students in our region.
+      Our commitment to academic excellence, combined with dedicated teachers and a nurturing
+      learning environment, has consistently produced outstanding results year after year.
+    </p>
+    <p>
+      We believe that every student has the potential to excel, and our holistic approach to
+      education ensures that each child receives the support, guidance, and inspiration they need to
+      reach their full potential. Our students' achievements are a testament to their hard work,
+      determination, and the quality education we provide.
+    </p>
+  </div>
+
+  <!-- Statistics Grid -->
+  <div class="stats-grid">
+    <div class="stat-card" *ngFor="let stat of stats">
+      <div class="stat-number">{{ stat.number }}</div>
+      <div class="stat-label">{{ stat.label }}</div>
+    </div>
+  </div>
+
+  <!-- Top Performers Section -->
+  <div class="performers-section">
+    <h2 class="section-title">
+      <span class="trophy-icon">🏆</span>
+      Top Performing Students
+    </h2>
+
+    <!-- Year Tabs -->
+    <div class="year-tabs">
+      <button
+        *ngFor="let year of years"
+        class="year-tab"
+        [class.active]="selectedYear === year"
+        (click)="showYear(year)"
+      >
+        {{ year }}
+      </button>
+    </div>
+
+    <!-- Performers Table -->
+    <table class="performers-table">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Student</th>
+          <th>Total Marks</th>
+          <th>Average</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let performer of currentPerformers">
+          <td>
+            <span class="rank-badge" [ngClass]="getRankClass(performer.rank)">{{
+              performer.rank
+            }}</span>
+          </td>
+          <td data-label="Student:">
+            <div class="student-profile">
+              <div class="student-avatar">{{ performer.initials }}</div>
+              <div class="student-info">
+                <span class="student-name">{{ performer.name }}</span>
+                <span class="student-class">{{ performer.class }}</span>
+              </div>
+            </div>
+          </td>
+          <td data-label="Total Marks:">
+            <span class="marks-badge">{{ performer.marks }}</span>
+          </td>
+          <td data-label="Average:">{{ performer.average }}</td>
+          <td data-label="Grade:">
+            <span class="grade-badge" [ngClass]="getGradeClass(performer.grade)">{{
+              performer.grade
+            }}</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
