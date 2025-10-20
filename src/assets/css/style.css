@@ -78,30 +78,65 @@ Version: 1.0.0
 /*------------------- 1.2. Function -------------------*/
 /*------------------- 1.3. Variable-------------------*/
 :root {
-  /* East Park Primary Theme Colors */
-  --theme-color: #7095c6;
-  --theme-color2: #464457;
+  /* Solidarity Primary Theme Colors */
+  --theme-color: #b64329; /* Warm terracotta - primary brand */
+  --theme-color2: #3d1c14; /* Deep chocolate brown */
 
-  /* Cool Neutral Sub-Theme */
-  --cool-white: #f5f6f7;
-  --cool-beige: #e8e9ed;
-  --cool-gray: #8b8d96;
+  /* Warm Neutral Sub-Theme */
+  --warm-sand: #b1a89f; /* Soft sandy beige */
+  --warm-taupe: #c9c1b8; /* Light taupe (complementary) */
+  --warm-gray: #8a7f76; /* Medium warm gray */
+  --dark-charcoal: #251c1f; /* Rich charcoal */
 
-  /* Background & Text */
+  /* Accent & Feature Colors */
+  --golden-amber: #d09a5c; /* Warm golden accent */
+  --burnt-sienna: #a33920; /* Deeper terracotta variant */
+  --copper-glow: #d4803f; /* Light copper (between amber & terracotta) */
+  --rust-red: #8b3018; /* Dark rust tone */
+
+  /* Background & Surface Colors */
   --body-bg: #ffffff;
-  --title-color: #7095c6;
-  --body-color: #444444;
-  --smoke-color: #f0f6fa;
-  --light-color: #f8f9fa;
-  --black-color: #000000;
+  --smoke-color: #f9f7f5; /* Warm off-white */
+  --light-color: #faf8f6; /* Lighter warm white */
+  --cream-bg: #f5f2ee; /* Soft cream background */
+  --sand-bg: #ede9e5; /* Light sand background */
+
+  /* Text Colors */
+  --title-color: #3d1c14; /* Deep brown for headings */
+  --body-color: #4a4038; /* Warm dark gray for body text */
+  --muted-text: #6d625a; /* Muted text color */
+  --black-color: #1a1412; /* Near-black with warmth */
   --white-color: #ffffff;
 
-  /* Accent Colors (Original) */
-  --vs-secondary-color: #464457;
-  --yellow-color: #fec624;
-  --success-color: #28a745;
-  --error-color: #dc3545;
-  --border-color: #e0e0e0;
+  /* Functional Colors */
+  --vs-secondary-color: #251c1f; /* Dark charcoal for secondary elements */
+  --success-color: #7a8f3a; /* Earthy olive green */
+  --warning-color: #d09a5c; /* Golden amber for warnings */
+  --error-color: #b64329; /* Terracotta for errors */
+  --info-color: #8a7366; /* Warm taupe-brown for info */
+
+  /* Border & Divider Colors */
+  --border-color: #ddd6cf; /* Soft warm border */
+  --border-light: #e8e3dd; /* Lighter border */
+  --border-dark: #b1a89f; /* Darker warm border */
+
+  /* Shadow & Overlay Colors */
+  --shadow-light: rgba(61, 28, 20, 0.08);
+  --shadow-medium: rgba(61, 28, 20, 0.15);
+  --shadow-dark: rgba(37, 28, 31, 0.25);
+  --overlay-dark: rgba(37, 28, 31, 0.7);
+
+  /* Interactive States */
+  --hover-terracotta: #c74d31; /* Lighter terracotta on hover */
+  --active-terracotta: #9a3420; /* Darker terracotta when active */
+  --hover-brown: #4a2318; /* Hover state for dark brown */
+  --focus-glow: rgba(182, 67, 41, 0.3);
+
+  /* Gradient Combinations */
+  --gradient-warm: linear-gradient(135deg, #d09a5c 0%, #b64329 100%);
+  --gradient-earth: linear-gradient(135deg, #3d1c14 0%, #251c1f 100%);
+  --gradient-sunset: linear-gradient(135deg, #d09a5c 0%, #b64329 50%, #3d1c14 100%);
+  --gradient-sand: linear-gradient(180deg, #f9f7f5 0%, #ede9e5 100%);
 
   /* Typography */
   --title-font: 'Fredoka', sans-serif;
@@ -115,6 +150,26 @@ Version: 1.0.0
   --section-space-mobile: 80px;
   --section-title-space: 60px;
   --ripple-ani-duration: 5s;
+
+  /* Spacing Scale */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 250ms ease-in-out;
+  --transition-slow: 400ms ease-in-out;
 }
 
 /*------------------- 1.5. Typography -------------------*/
@@ -4820,7 +4875,7 @@ blockquote.vs-quote p {
   height: var(--icon-size, 94px);
   line-height: var(--icon-size, 94px);
   background-color: var(--icon-bg, #f0f6fa);
-  color: var(--title-color);
+  color: var(--theme-color);
   border-radius: 50%;
   text-align: center;
   transition: all ease 0.4s;

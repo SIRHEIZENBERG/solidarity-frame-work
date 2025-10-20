@@ -14,7 +14,7 @@
 .performance-header h1 {
   font-family: 'Fredoka', sans-serif;
   font-size: 3em;
-  color: #7095c6;
+  color: #3d1c14;
   margin-bottom: 20px;
   font-weight: 700;
 }
@@ -40,7 +40,7 @@
 
 .intro-section h2 {
   font-family: 'Fredoka', sans-serif;
-  color: #7095c6;
+  color: #3d1c14;
   font-size: 2em;
   margin-bottom: 20px;
   font-weight: 600;
@@ -79,7 +79,7 @@
 .stat-number {
   font-family: 'Fredoka', sans-serif;
   font-size: 3em;
-  color: #7095c6;
+  color: #3d1c14;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -102,7 +102,7 @@
 
 .section-title {
   font-family: 'Fredoka', sans-serif;
-  color: #7095c6;
+  color: #3d1c14;
   font-size: 2em;
   margin-bottom: 30px;
   font-weight: 600;
@@ -131,19 +131,19 @@
   font-family: 'Jost', sans-serif;
   font-size: 1em;
   font-weight: 500;
-  color: #7095c6;
+  color: #3d1c14;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .year-tab:hover {
-  background: #7095c6;
+  background: #3d1c14;
   color: white;
   transform: translateY(-2px);
 }
 
 .year-tab.active {
-  background: #7095c6;
+  background: #3d1c14;
   color: white;
   box-shadow: 0 4px 15px rgba(112, 149, 198, 0.3);
 }
@@ -158,7 +158,7 @@
 }
 
 .performers-table thead {
-  background: linear-gradient(135deg, #7095c6 0%, #8ba9d0 100%);
+  background: linear-gradient(135deg, #3d1c14 0%, #8ba9d0 100%);
 }
 
 .performers-table thead th {
@@ -220,7 +220,7 @@
 
 .rank-other {
   background: #e8eff8;
-  color: #7095c6;
+  color: #3d1c14;
 }
 
 .student-profile {
@@ -233,7 +233,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #7095c6 0%, #8ba9d0 100%);
+  background: linear-gradient(135deg, #3d1c14 0%, #8ba9d0 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -329,7 +329,7 @@
   .performers-table tbody td::before {
     content: attr(data-label);
     font-weight: 600;
-    color: #7095c6;
+    color: #3d1c14;
     font-size: 0.95em;
     flex-shrink: 0;
   }
@@ -339,7 +339,7 @@
     justify-content: center;
     padding: 0 0 20px 0;
     margin-bottom: 5px;
-    border: 1px solid #7095c6 !important;
+    border: 1px solid #3d1c14 !important;
     border-radius: 10px !important;
   }
 
@@ -450,7 +450,7 @@
     background: white;
     margin-bottom: 15px;
     border-radius: 12px;
-    border: 1px solid #7095c6;
+    border: 1px solid #3d1c14;
     padding: 20px 15px;
     box-shadow: 0 2px 8px rgba(112, 149, 198, 0.08);
   }
@@ -475,7 +475,7 @@
   .performers-table tbody td::before {
     content: attr(data-label);
     font-weight: 600;
-    color: #7095c6;
+    color: #3d1c14;
     font-size: 0.9em;
   }
 

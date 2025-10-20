@@ -1,22 +1,24 @@
-<header class="vs-header header-layout1">
-  <!-- <div class="header-top">
+<header class="vs-header header-layout2">
+  <div class="header-top">
     <div class="container">
-      <div class="row justify-content-between align-items-center">
-        <div class="col-auto d-none d-lg-block">
-          <div class="header-links style-white">
-            <ul>
-              <li>
-                <a><i class="far fa-user-circle"></i>East Park Academy Joska</a>
-              </li>
-            </ul>
+      <div class="row align-items-center justify-content-between">
+        <div class="col col-sm-auto">
+          <div class="header-logo custom-logo-area">
+            <a routerLink="/">
+              <img src="assets/img/logo/solidarity-logo.jpg" class="east-park-logo" alt="logo" />
+            </a>
+            <div class="custom-text-area">
+              <h1 class="custom-header-text">Solidarity</h1>
+              <h1 class="custom-header-text">Academy</h1>
+            </div>
           </div>
         </div>
-        <div class="col-lg-auto text-center">
-          <div class="header-links style2 style-white">
+        <div class="col-6 col-sm-auto d-none d-lg-block">
+          <div class="header-links style3 style-white">
             <ul>
-              <li>
+              <li class="d-none d-xl-inline-block">
                 <i class="fas fa-envelope"></i>Email:
-                <a href="mailto:user@example.com">userexample.com</a>
+                <a href="mailto:user@example.com">user@example.com</a>
               </li>
               <li>
                 <i class="fas fa-mobile-alt"></i>Phone:
@@ -25,72 +27,56 @@
             </ul>
           </div>
         </div>
-      </div>
-    </div>
-  </div> -->
-  <div class="sticky-wrap">
-    <div class="sticky-active">
-      <div class="container">
-        <div class="row gx-3 align-items-center justify-content-between">
-          <div class="col-8 col-sm-auto">
-            <div class="header-logo custom-logo-area">
-              <a routerLink="/">
-                <img src="assets/img/logo/East Park Logo.jpg" class="east-park-logo" alt="logo" />
-              </a>
-              <div class="custom-text-area">
-                <h1 class="custom-header-text">East Park</h1>
-                <h1 class="custom-header-text">Academy</h1>
-              </div>
+        <div class="col">
+          <div class="row align-items-center justify-content-end gx-3">
+            <div class="col-auto">
+              <button class="vs-menu-toggle d-inline-block d-lg-none" (click)="openMobileMenu()">
+                <i class="fal fa-bars"></i>
+              </button>
             </div>
-          </div>
-          <div class="col text-end text-lg-center">
-            <nav class="main-menu menu-style1 d-none d-lg-block">
-              <ul>
-                <li>
-                  <a routerLink="our-team">Our Team</a>
-                </li>
-
-                <li>
-                  <a routerLink="about-us">About Us</a>
-                </li>
-
-                <li>
-                  <a routerLink="contact-us">Contact</a>
-                </li>
-                <li><a routerLink="performance">Performance</a></li>
-              </ul>
-            </nav>
-            <button class="vs-menu-toggle d-inline-block d-lg-none" (click)="openMobileMenu()">
-              <i class="fal fa-bars"></i>
-            </button>
-          </div>
-
-          <div class="col-auto d-none d-xl-block">
-            <a class="vs-btn">Apply Today</a>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="container">
+    <div class="menu-area">
+      <div class="row justify-content-between align-items-center">
+        <div class="col">
+          <nav class="main-menu menu-style2 d-none d-lg-block">
+            <ul>
+              <li>
+                <a routerLink="about-us">About Us</a>
+              </li>
 
-  <div class="mobile-menu" id="mobileMenu">
-    <div class="mobile-menu-content">
-      <div class="mobile-menu-header">
-        <span>Menu</span>
-        <button class="mobile-menu-close" id="menuClose">
-          <i class="fas fa-times"></i>
-        </button>
+              <li>
+                <a routerLink="contact-us">Contact us</a>
+              </li>
+              <li>
+                <a routerLink="performance">Performance</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <nav class="mobile-menu-nav">
-        <ul>
-          <li><a routerLink="our-team">Our Team</a></li>
-          <li><a routerLink="about-us">About Us</a></li>
-          <li><a routerLink="contact-us">Contact</a></li>
-          <li><a routerLink="performance">Performance</a></li>
-        </ul>
-      </nav>
-      <div class="mobile-menu-footer">
-        <a class="vs-btn" href="/apply">Apply Today</a>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-content">
+        <div class="mobile-menu-header">
+          <span>Menu</span>
+          <button class="mobile-menu-close" id="menuClose">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <nav class="mobile-menu-nav">
+          <ul>
+            <li><a routerLink="our-team">Our Team</a></li>
+            <li><a routerLink="about-us">About Us</a></li>
+            <li><a routerLink="contact-us">Contact</a></li>
+            <li><a routerLink="performance">Performance</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
   </div>

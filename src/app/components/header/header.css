@@ -15,6 +15,11 @@
 .custom-header-text {
   font-size: 25px;
   text-wrap: noWrap;
+  color: white;
+}
+
+.header-layout2 {
+  margin-bottom: 20px;
 }
 
 .custom-text-area {
@@ -60,7 +65,7 @@
 }
 
 .mobile-menu-header {
-  background-color: #7095c6;
+  background-color: #3d1c14;
   color: #ffffff;
   padding: 20px;
   display: flex;
